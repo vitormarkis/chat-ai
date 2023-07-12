@@ -18,19 +18,33 @@ export default function Home() {
           <CardTitle>Chat Box</CardTitle>
           <CardDescription>Criando um chat box utilizando API da Vercel.</CardDescription>
         </CardHeader>
-        <CardContent className="bg-red-500">
-          <div>
-            <Avatar>
+        <CardContent className="space-y-2 text-sm">
+          <div className="flex gap-2 items-end">
+            <Avatar className="border">
               <AvatarFallback>VM</AvatarFallback>
               <AvatarImage src="https://github.com/vitormarkis.png"></AvatarImage>
             </Avatar>
-            <p>Como criar um Design System?</p>
+            <p>
+              <strong className="block">Vitor Markis:</strong>
+              <span>Como criar um Design System?</span>
+            </p>
           </div>
           <div>
-            <Avatar>
-              <AvatarFallback>RS</AvatarFallback>
-              <AvatarImage src="https://github.com/rocketseat.png"></AvatarImage>
-            </Avatar>
+            <div className="flex gap-2 items-end">
+              <Avatar className="border">
+                <AvatarFallback>RS</AvatarFallback>
+                <AvatarImage src="https://github.com/rocketseat.png"></AvatarImage>
+              </Avatar>
+              <p>
+                <strong className="block">Bot:</strong>
+                {/* <span>Como criar um Design System?</span> */}
+                <span>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse odio aperiam
+                  voluptas autem sapiente quisquam, magnam expedita ea suscipit soluta excepturi
+                  commodi, fugit dolorum iure quis aspernatur in architecto fuga?
+                </span>
+              </p>
+            </div>
           </div>
         </CardContent>
         <CardFooter>
